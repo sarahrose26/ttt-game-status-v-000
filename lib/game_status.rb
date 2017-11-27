@@ -50,3 +50,9 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  if win_combination = won?(board)
+    board[win_combination[0]]
+  end
+end
