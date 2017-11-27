@@ -29,5 +29,8 @@ def won?(board)
       return false
     end
   end
+end
 
+def full?(board)
+  !board.include?(" ") #if board does not include a space
 end
