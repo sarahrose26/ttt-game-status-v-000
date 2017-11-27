@@ -52,7 +52,8 @@ def over?(board)
 end
 
 def winner(board)
-  if win_combination = won?(board)
-    board[win_combination[0]]
+  if WIN_COMBINATIONS.include?(won?(board))
+    index = won?(board)[0]
+    return board[index]
   end
 end
