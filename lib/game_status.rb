@@ -34,3 +34,11 @@ end
 def full?(board)
   !board.include?(" ") #if board does not include a space
 end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true
+  else
+    return false
+  end 
+end
